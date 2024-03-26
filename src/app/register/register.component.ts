@@ -9,10 +9,7 @@ import { UserService } from '../user.service';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private userService: UserService, private : FormGroup) { }
-
-
- }
+  @Output() registerdetails: EventEmitter<{ username: string,age:number, email: string, password: string,mobile:number }> = new EventEmitter<{ username: string,age:number, email: string, password: string,mobile:number }>();
 
   reactiveForm: FormGroup;
   usernameError: string = '';
@@ -34,7 +31,7 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     if (this.reactiveForm.valid) {
       const { username, age, email, password, mobile } = this.reactiveForm.value;
-      this.userService.emit({ username, age, email, password, mobile });
+      this.registerdetails.emit({ username, age, email, password, mobile });
       console.log(username + " registered successfully");
       this.reactiveForm.reset();
     } else {

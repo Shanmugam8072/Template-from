@@ -9,9 +9,8 @@ import { UserService } from '../user.service';
 })
 export class LoginComponent implements OnInit {
   
-  constructor(private user:UserService){
-
-  }
+  @Input() users: { username: string,age:number, email: string, password: string,mobile:number }[] = [];
+  
   
   reactiveloginForm: FormGroup;
   userError: string = '';
@@ -29,7 +28,7 @@ export class LoginComponent implements OnInit {
   onLoginSubmit() {
     if (this.reactiveloginForm.valid) {
       const { username, password } = this.reactiveloginForm.value;
-      let data = this.user.find(user => user.username === username && user.password === password);
+      let data = this.users.find(user => user.username === username && user.password === password);
       if (data) {
         alert('Login successfully');
       } 
