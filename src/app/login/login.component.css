@@ -1,0 +1,45 @@
+form{
+    max-width: 300px;
+    margin: 100 center;
+    padding: 300px;
+    text-align: left;
+    padding: 20px;
+    background-color: #8dd1d1;
+    border: 20px;
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-left: 400px;
+
+    
+  }
+  h2{
+    text-align: center;
+  }
+   
+   input[type="password"],
+   input[type="username"],
+   button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+   
+  }
+  button{
+    background-color: rgb(163, 52, 52);
+    color: black;
+    padding: 10px;
+  }
+  
+ a {
+    display: block;
+    margin-top: 20px;
+    border: 20px;
+  }
+  .error-message{
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  
+  

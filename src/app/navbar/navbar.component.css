@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 5;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-right: 50px;
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-list li a:hover {
+    text-decoration: underline;
+  }

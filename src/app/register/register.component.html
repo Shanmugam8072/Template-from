@@ -1,0 +1,36 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    
+    <h2>Register</h2>
+    <div>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" formControlName="username" >
+    <div class="error-message">{{ usernameError }}</div>
+  </div>
+
+    <div>
+      <label for="age">Age:</label>
+    <input type="text" id="age" name="age" formControlName="age">
+    <div class="error-message">{{ ageError }}</div>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+  <input type="email" id="email" name="email" formControlName="email">
+  <div class="error-message">{{ emailError }}</div>
+</div>
+
+    <div>
+      <label for="password">Password:</label>
+    <input type="password" id="password" name="password" formControlName="password" >
+    <div class="error-message">{{ passwordError }}</div>
+    </div>
+
+    <div>
+      <label for="mobile">Mobile:</label>
+    <input type="text" id="mobile" name="mobile" formControlName="mobile" >
+    <div class="error-message">{{ mobileError }}</div>
+  </div>
+
+    <button id="button" type="submit">Register</button>
+    <a routerLink="/login">Already have an account? Login here</a>
+  </form>
+  

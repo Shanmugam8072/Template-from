@@ -1,0 +1,16 @@
+<form [formGroup]="reactiveloginForm" (ngSubmit)="onLoginSubmit()">
+    <h2>Login</h2>
+    <div>
+    <label for="username">username:</label><br>
+    <input type="username" id="username" name="username" formControlName="username" >
+    <div class="error-message">{{ userError }}</div>
+  </div>
+  
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" formControlName="password" >
+    <div class="error-message">{{ passError }}</div>
+  </div>
+  <button type="submit" >Login</button>
+  <a routerLink="/register">You did't have an account? Register here</a>
+</form>

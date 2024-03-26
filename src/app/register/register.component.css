@@ -1,0 +1,38 @@
+form {
+    max-width: 300px;
+    margin: 100 center;
+    margin-top: 200px;
+    padding: 50px;
+    text-align: left;
+    border: 20px;
+    border-radius: 5px;
+    background-color: #8dd1d1;
+    padding: 20px;
+    margin-left: 400px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+   
+  }
+  button{
+    background-color: aqua;
+    padding: 10px;
+  }
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    margin: 20px;
+  }
+  .error-message{
+    color: red;
+    font-weight: bold;
+  }
+ 
